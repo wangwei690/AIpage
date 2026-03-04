@@ -1,0 +1,6 @@
+{
+  "name": "github-upload",
+  "version": "1.0.0",
+  "description": "推送本地文件到GitHub仓库并发布GitHub Pages",
+  "keywords": ["github", "upload", "deploy", "pages"]
+}
