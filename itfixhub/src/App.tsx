@@ -1,12 +1,21 @@
-import { useState } from "react"
+import { useState, lazy, Suspense } from "react"
 import { Search, ArrowRight, Zap, Shield, Wifi, Laptop, Database, Users, Mail, Clock, CheckCircle } from "lucide-react"
 import { Header } from "./components/Header"
 import { Footer } from "./components/Footer"
 import { SolutionCard, type Solution } from "./components/SolutionCard"
-import { CategoryCard } from "./components/CategoryCard"
 import { Button } from "./components/ui/button"
 import { Input } from "./components/ui/input"
 import { Badge } from "./components/ui/badge"
+
+// Lazy load below-the-fold components for better FID/INP
+const CategoryCard = lazy(() => import("./components/CategoryCard").then(m => ({ default: m.CategoryCard })))
+
+// Loading fallback component
+function CategoryCardSkeleton() {
+  return (
+    <div className="animate-pulse rounded-lg bg-secondary/50 h-32" />
+  )
+}
 
 // Mock data
 const hotSolutions: Solution[] = [
@@ -173,7 +182,9 @@ function App() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {categories.map((category) => (
-                <CategoryCard key={category.title} {...category} />
+                <Suspense key={category.title} fallback={<CategoryCardSkeleton />}>
+                  <CategoryCard {...category} />
+                </Suspense>
               ))}
             </div>
           </div>
