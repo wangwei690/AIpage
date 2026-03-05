@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ITFixHub - 企业IT解决方案平台，快速解决各类技术问题，提供专业的IT支持与咨询服务" />
+    <meta name="keywords" content="IT解决方案,企业IT,技术问题,IT支持,IT服务,IT咨询" />
+    <meta name="author" content="ITFixHub" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wangwei690.github.io/AIpage/" />
+    <meta property="og:title" content="ITFixHub - IT解决方案平台" />
+    <meta property="og:description" content="企业IT解决方案平台，快速解决各类技术问题" />
+    <meta property="og:image" content="/vite.svg" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ITFixHub - IT解决方案平台" />
+    <meta name="twitter:description" content="企业IT解决方案平台，快速解决各类技术问题" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wangwei690.github.io/AIpage/" />
+    
+    <!-- Performance: Preconnect to external origins for faster connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    
+    <!-- Performance: Cache headers for static assets -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable" />
+    
+    <!-- Critical: Prevent CLS by reserving space for root element -->
+    <style>
+      #root {
+        min-height: 100vh;
+        content-visibility: auto;
+      }
+      /* Initial loading skeleton */
+      #root:empty {
+        background: linear-gradient(90deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+      }
+      @keyframes shimmer {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ITFixHub",
+      "description": "企业IT解决方案平台",
+      "url": "https://wangwei690.github.io/AIpage/",
+      "logo": "https://wangwei690.github.io/AIpage/vite.svg"
+    }
+    </script>
+    
+    <title>ITFixHub - IT解决方案平台</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
