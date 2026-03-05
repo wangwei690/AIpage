@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="ITFixHub - 常用软件工具推荐，设计师、开发者、运维人员必备工具清单">
+ <meta name="theme-color" content="#0f172a">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <title>软件工具推荐 - ITFixHub</title>
+ <style>
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+ background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+ min-height: 100vh;
+ color: #f8fafc;
+ }
+ .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+ .header { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; }
+ .back-link { color: #06b6d4; text-decoration: none; font-size: 14px; }
+ .back-link:hover { text-decoration: underline; }
+ .logo {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 48px; height: 48px;
+ background: linear-gradient(135deg, #06b6d4, #3b82f6);
+ border-radius: 12px;
+ font-size: 24px;
+ }
+ h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+ .subtitle { font-size: 16px; color: #94a3b8; margin-bottom: 40px; }
+ .section { margin-bottom: 48px; }
+ .section-title { font-size: 24px; font-weight: 600; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+ .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+ .tool-card {
+ background: #1e293b; border: 1px solid #334155;
+ border-radius: 12px; padding: 20px;
+ transition: border-color 0.2s ease, transform 0.2s ease;
+ }
+ .tool-card:hover { border-color: #06b6d4; transform: translateY(-2px); }
+ .tool-name { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+ .tool-desc { font-size: 14px; color: #94a3b8; margin-bottom: 12px; }
+ .tool-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+ .tag { font-size: 12px; padding: 4px 10px; background: #334155; border-radius: 6px; color: #cbd5e1; }
+ .tag.paid { background: #7c3aed; }
+ .tag.free { background: #059669; }
+ .tag.cross-platform { background: #0891b2; }
+ .footer { text-align: center; padding: 40px 0; color: #64748b; font-size: 14px; }
+ .footer a { color: #06b6d4; text-decoration: none; }
+ .footer a:hover { text-decoration: underline; }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <a href="index.html" class="back-link">← 返回首页</a>
+ <div class="header">
+ <div class="logo">🔧</div>
+ <div>
+ <h1>软件工具推荐</h1>
+ <p class="subtitle">精选设计师、开发者、运维人员必备工具</p>
+ </div>
+ </div>
+
+ <div class="section">
+ <h2 class="section-title">🎨 设计工具</h2>
+ <div class="tools-grid">
+ <div class="tool-card">
+ <div class="tool-name">Figma</div>
+ <div class="tool-desc">UI/UX设计协作平台，浏览器端设计工具</div>
+ <div class="tool-tags">
+ <span class="tag free">免费版</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">Sketch</div>
+ <div class="tool-desc">macOS专业UI设计工具</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费</span><span class="tag">macOS</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">Adobe XD</div>
+ <div class="tool-desc">Adobe用户体验设计工具</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="section">
+ <h2 class="section-title">💻 开发工具</h2>
+ <div class="tools-grid">
+ <div class="tool-card">
+ <div class="tool-name">IntelliJ IDEA</div>
+ <div class="tool-desc">Java/Kotlin企业级IDE</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费/免费</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">WebStorm</div>
+ <div class="tool-desc">JavaScript/前端开发IDE</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">Visual Studio Enterprise</div>
+ <div class="tool-desc">微软企业级IDE</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费</span><span class="tag">Windows</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">Docker Desktop</div>
+ <div class="tool-desc">容器化开发环境</div>
+ <div class="tool-tags">
+ <span class="tag free">免费</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">VMware Workstation</div>
+ <div class="tool-desc">虚拟机运行平台</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费</span><span class="tag">Windows/Linux</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">VirtualBox</div>
+ <div class="tool-desc">开源虚拟机软件</div>
+ <div class="tool-tags">
+ <span class="tag free">免费开源</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="section">
+ <h2 class="section-title">📋 协作工具</h2>
+ <div class="tools-grid">
+ <div class="tool-card">
+ <div class="tool-name">Jira</div>
+ <div class="tool-desc">项目管理和缺陷跟踪</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">Confluence</div>
+ <div class="tool-desc">企业知识库和文档协作</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">Slack</div>
+ <div class="tool-desc">团队即时通讯</div>
+ <div class="tool-tags">
+ <span class="tag free">免费版</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">Microsoft Teams</div>
+ <div class="tool-desc">微软企业协作平台</div>
+ <div class="tool-tags">
+ <span class="tag free">免费版</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="section">
+ <h2 class="section-title">🗄️ 数据库工具</h2>
+ <div class="tools-grid">
+ <div class="tool-card">
+ <div class="tool-name">MySQL Workbench</div>
+ <div class="tool-desc">MySQL官方数据库管理工具</div>
+ <div class="tool-tags">
+ <span class="tag free">免费开源</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">Navicat Premium</div>
+ <div class="tool-desc">多数据库管理工具</div>
+ <div class="tool-tags">
+ <span class="tag paid">付费</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">SQL Server Management Studio</div>
+ <div class="tool-desc">SQL Server管理工具</div>
+ <div class="tool-tags">
+ <span class="tag free">免费</span><span class="tag">Windows</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">MongoDB Compass</div>
+ <div class="tool-desc">MongoDB图形化管理工具</div>
+ <div class="tool-tags">
+ <span class="tag free">免费</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="section">
+ <h2 class="section-title">🎬 媒体工具</h2>
+ <div class="tools-grid">
+ <div class="tool-card">
+ <div class="tool-name">DaVinci Resolve</div>
+ <div class="tool-desc">专业视频剪辑调色软件</div>
+ <div class="tool-tags">
+ <span class="tag free">免费版</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-name">OBS Studio</div>
+ <div class="tool-desc">开源直播录制软件</div>
+ <div class="tool-tags">
+ <span class="tag free">免费开源</span><span class="tag cross-platform">跨平台</span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="footer">
+ <p>© 2026 ITFixHub · <a href="index.html">返回首页</a></p>
+ </div>
+ </div>
+</body>
+</html>

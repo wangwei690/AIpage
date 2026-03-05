@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang=" zh-CN">
 <head>
  <meta charset="UTF-8">
@@ -70,27 +70,27 @@
  </style>
 </head>
 <body>
- <div class=\container\>
- <div class=\hero\>
- <div class=\logo\>🔧</div>
+ <div class="container">
+ <div class="hero">
+ <div class="logo">🔧</div>
  <h1>ITFixHub</h1>
- <p class=\subtitle\>企业IT问题智能解决方案平台</p>
- <div class=\search-box\>
- <input type=\text\ placeholder=\搜索问题、解决方案...\>
+ <p class="subtitle">企业IT问题智能解决方案平台</p>
+ <div class="search-box">
+ <input type="text" placeholder="搜索问题、解决方案...">
  </div>
- <div class=\stats\>
- <div><div class=\stat-number\>1,234</div><div class=\stat-label\>解决方案</div></div>
- <div><div class=\stat-number\>567</div><div class=\stat-label\>常见问题</div></div>
- <div><div class=\stat-number\>8,901</div><div class=\stat-label\>用户</div></div>
+ <div class="stats">
+ <div><div class="stat-number">1,234</div><div class="stat-label">解决方案</div></div>
+ <div><div class="stat-number">567</div><div class="stat-label">常见问题</div></div>
+ <div><div class="stat-number">8,901</div><div class="stat-label">用户</div></div>
  </div>
  </div>
- <div class=\categories\>
- <div class=\category-card\><div class=\category-icon\>💻</div><div class=\category-title\>系统问题</div><div class=\category-desc\>Windows、Mac、Linux系统错误</div></div>
- <div class=\category-card\><div class=\category-icon\>�office</div><div class=\category-title\>办公软件</div><div class=\category-desc\>Office、Outlook、WPS问题</div></div>
- <div class=\category-card\><div class=\category-icon\>🌐</div><div class=\category-title\>网络问题</div><div class=\category-desc\>VPN、网络连接、WiFi问题</div></div>
- <div class=\category-card\><div class=\category-icon\>🔐</div><div class=\category-title\>账户权限</div><div class=\category-desc\>AD域、权限申请、账户问题</div></div>
- <div class=\category-card\><div class=\category-icon\>🖨️</div><div class=\category-title\>硬件设备</div><div class=\category-desc\>打印机、扫描仪、投影仪</div></div>
- <div class=\category-card\><div class=\category-icon\>🔧</div><div class=\category-title\>开发工具</div><div class=\category-desc\>IDE、Git、编译器问题</div></div>
+ <div class="categories">
+ <div class="category-card" onclick="location.href='#'"><div class="category-icon">💻</div><div class="category-title">系统问题</div><div class="category-desc">Windows、Mac、Linux系统错误</div></div>
+ <div class="category-card" onclick="location.href='#'"><div class="category-icon">📀</div><div class="category-title">办公软件</div><div class="category-desc">Office、Outlook、WPS问题</div></div>
+ <div class="category-card" onclick="location.href='#'"><div class="category-icon">🌐</div><div class="category-title">网络问题</div><div class="category-desc">VPN、网络连接、WiFi问题</div></div>
+ <div class="category-card" onclick="location.href='#'"><div class="category-icon">🔐</div><div class="category-title">账户权限</div><div class="category-desc">AD域、权限申请、账户问题</div></div>
+ <div class="category-card" onclick="location.href='#'"><div class="category-icon">🖨️</div><div class="category-title">硬件设备</div><div class="category-desc">打印机、扫描仪、投影仪</div></div>
+ <div class="category-card" onclick="location.href='software.html'"><div class="category-icon">⚙️</div><div class="category-title">软件工具</div><div class="category-desc">IDE、开发工具、虚拟机</div></div>
  </div>
  </div>
 </body>
@@ -100,6 +100,7 @@ if ('serviceWorker' in navigator) {
  window.addEventListener('load', () => {
    navigator.serviceWorker.register('/sw.js').catch(() => {});
  }
+)
 }
 </script>
 </html>
