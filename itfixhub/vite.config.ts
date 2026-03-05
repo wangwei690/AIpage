@@ -28,6 +28,9 @@ export default defineConfig({
     modulePreload: {
       polyfill: true,
     },
+    // Report compressed size for better analysis
+    reportCompressedSize: true,
+    // Drop console in production
     rollupOptions: {
       output: {
         // Manual chunks for vendor code separation (better caching)
@@ -63,5 +66,9 @@ export default defineConfig({
     esbuildOptions: {
       target: 'esnext',
     },
+  },
+  // Compression
+  esbuild: {
+    drop: ['console', 'debugger'],
   },
 })
