@@ -10,6 +10,8 @@ export default defineConfig({
     sourcemap: false,
     // Chunk size warning limit
     chunkSizeWarningLimit: 500,
+    // Target modern browsers for smaller bundles
+    target: 'es2015',
     rollupOptions: {
       output: {
         // Manual chunks for better caching
@@ -27,14 +29,18 @@ export default defineConfig({
   server: {
     headers: {
       'Cache-Control': 'public, max-age=31536000, immutable',
-      'ETag': '',
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
     },
   },
   // Preview server configuration  
   preview: {
     headers: {
       'Cache-Control': 'public, max-age=31536000, immutable',
-      'ETag': '',
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
     },
   },
 });
