@@ -10,12 +10,18 @@ export default defineConfig({
     sourcemap: false,
     // Chunk size warning limit
     chunkSizeWarningLimit: 500,
+    // SEO: Generate manifest for PWA
+    manifest: true,
     rollupOptions: {
       output: {
         // Manual chunks for better caching
         manualChunks: {
           vendor: ['react', 'react-dom'],
         },
+        // SEO: Ensure consistent asset filenames for caching
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
   },
